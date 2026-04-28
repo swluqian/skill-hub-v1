@@ -1,0 +1,34 @@
+import React, { useState } from 'react';
+import './styles.css';
+
+interface CopyButtonProps {
+  text: string;
+  label?: string;
+}
+
+export default function CopyButton({ text, label = '复制' }: CopyButtonProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      document.body.removeChild(textarea);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    }
+  };
+
+  return (
+    <button className={`copy-btn ${copied ? 'copied' : ''}`} onClick={handleCopy}>
+      {copied ? '✓ 已复制' : label}
+    </button>
+  );
+}

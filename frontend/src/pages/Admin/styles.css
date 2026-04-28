@@ -1,0 +1,48 @@
+.admin-page { padding: 32px 0; }
+.admin-inner { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+.admin-inner h1 { font-size: 28px; margin: 0 0 24px; }
+.admin-tabs { display: flex; gap: 4px; margin-bottom: 24px; background: #f5f5f5; border-radius: 8px; padding: 4px; width: fit-content; }
+.admin-tab { padding: 8px 20px; border: none; background: transparent; border-radius: 6px; font-size: 14px; color: #666; cursor: pointer; }
+.admin-tab.active { background: #fff; color: #667eea; font-weight: 500; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.admin-content { background: #fff; border-radius: 16px; border: 1px solid #eee; padding: 24px; }
+.action-cell { display: flex; gap: 8px; }
+.btn-approve { padding: 4px 12px; border: 1px solid #52c41a; color: #52c41a; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-approve:hover { background: #f6ffed; }
+.btn-reject { padding: 4px 12px; border: 1px solid #ff4d4f; color: #ff4d4f; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-reject:hover { background: #fff2f0; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modal { background: #fff; border-radius: 12px; padding: 24px; width: 400px; max-width: 90vw; }
+.modal h3 { margin: 0 0 16px; }
+.modal textarea { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 12px; font-size: 14px; resize: vertical; box-sizing: border-box; }
+.reason-counter { text-align: right; font-size: 12px; color: #999; margin-top: 4px; }
+.modal-actions { display: flex; gap: 8px; margin-top: 16px; justify-content: flex-end; }
+.modal .form-group { margin-bottom: 12px; }
+.modal .form-group label { display: block; margin-bottom: 4px; font-size: 14px; color: #666; }
+.modal .form-group input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px 12px; font-size: 14px; box-sizing: border-box; }
+.auth-error { background: #fff2f0; color: #ff4d4f; padding: 10px 12px; border-radius: 8px; font-size: 14px; margin-bottom: 12px; }
+.btn-edit { padding: 4px 12px; border: 1px solid #667eea; color: #667eea; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-edit:hover { background: #f0f0ff; }
+.btn-delete { padding: 4px 12px; border: 1px solid #ff4d4f; color: #ff4d4f; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-delete:hover { background: #fff2f0; }
+.btn-view { padding: 4px 12px; border: 1px solid #667eea; color: #667eea; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-view:hover { background: #f0f0ff; }
+.skill-detail-modal { width: 800px; max-width: 90vw; max-height: 85vh; overflow-y: auto; }
+.skill-detail-content { background: #fafafa; border: 1px solid #eee; border-radius: 12px; padding: 24px; }
+.skill-detail-header { display: flex; gap: 20px; align-items: flex-start; background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 16px; border: 1px solid #e8e8e8; }
+.skill-detail-icon { width: 72px; height: 72px; border-radius: 10px; overflow: hidden; flex-shrink: 0; }
+.skill-detail-icon-img { width: 100%; height: 100%; object-fit: cover; }
+.skill-detail-icon-placeholder { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; font-size: 28px; font-weight: 600; }
+.skill-detail-basic { flex: 1; }
+.skill-detail-basic h2 { margin: 0 0 8px; font-size: 20px; color: #333; }
+.skill-detail-meta { display: flex; flex-wrap: wrap; gap: 12px; font-size: 13px; color: #666; }
+.skill-detail-meta span { background: #f5f5f5; padding: 2px 8px; border-radius: 4px; }
+.skill-detail-section { background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 12px; border: 1px solid #e8e8e8; }
+.skill-detail-section:last-child { margin-bottom: 0; }
+.skill-detail-section h3 { margin: 0 0 12px; font-size: 14px; color: #667eea; text-transform: uppercase; letter-spacing: 0.5px; }
+.skill-detail-row { display: grid; grid-template-columns: 100px 1fr; gap: 8px; margin-bottom: 8px; font-size: 14px; }
+.skill-detail-row:last-child { margin-bottom: 0; }
+.skill-detail-label { color: #666; }
+.skill-detail-value { color: #333; word-break: break-word; }
+.skill-detail-value.content { white-space: pre-wrap; background: #f9f9f9; padding: 12px; border-radius: 8px; max-height: 250px; overflow-y: auto; }
+.download-link { color: #667eea; text-decoration: none; font-weight: 500; }
+.download-link:hover { text-decoration: underline; }

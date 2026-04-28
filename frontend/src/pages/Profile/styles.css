@@ -1,0 +1,37 @@
+.profile-page { padding: 32px 0; }
+.profile-inner { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+.profile-card { background: #fff; border-radius: 16px; border: 1px solid #eee; padding: 32px; display: flex; gap: 24px; margin-bottom: 24px; }
+.profile-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center; color: #fff; font-size: 32px; font-weight: 700; overflow: hidden; flex-shrink: 0; }
+.profile-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.profile-info h2 { margin: 0 0 4px; font-size: 22px; }
+.profile-email { color: #999; font-size: 14px; margin: 0 0 8px; }
+.profile-bio { color: #666; font-size: 14px; margin: 0 0 16px; }
+.profile-edit { flex: 1; }
+.edit-actions { display: flex; gap: 8px; margin-top: 12px; }
+.my-skills { background: #fff; border-radius: 16px; border: 1px solid #eee; padding: 24px; }
+.my-skills h3 { margin: 0 0 16px; font-size: 18px; }
+.skills-table { overflow-x: auto; }
+.skills-table table { width: 100%; border-collapse: collapse; }
+.skills-table th, .skills-table td { padding: 12px; text-align: left; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+.skills-table th { color: #999; font-weight: 500; }
+.status-badge { padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+.status-pending { background: #fff7e6; color: #fa8c16; }
+.status-approved { background: #f6ffed; color: #52c41a; }
+.status-rejected { background: #fff2f0; color: #ff4d4f; }
+.status-superseded { background: #f0f0f0; color: #999; }
+.reject-reason { max-width: 200px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: #999; font-size: 13px; }
+.action-cell { display: flex; gap: 8px; }
+.btn-edit { padding: 4px 12px; border: 1px solid #667eea; color: #667eea; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-edit:hover { background: #f0f0ff; }
+.btn-delete { padding: 4px 12px; border: 1px solid #ff4d4f; color: #ff4d4f; background: #fff; border-radius: 4px; cursor: pointer; font-size: 13px; }
+.btn-delete:hover { background: #fff2f0; }
+.empty-text { color: #999; text-align: center; padding: 32px 0; }
+.profile-actions { display: flex; gap: 8px; }
+.modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; z-index: 1000; }
+.modal { background: #fff; border-radius: 12px; padding: 24px; width: 400px; max-width: 90vw; }
+.modal h3 { margin: 0 0 16px; }
+.modal .form-group { margin-bottom: 12px; }
+.modal .form-group label { display: block; margin-bottom: 4px; font-size: 14px; color: #666; }
+.modal .form-group input { width: 100%; border: 1px solid #ddd; border-radius: 8px; padding: 10px 12px; font-size: 14px; box-sizing: border-box; }
+.modal-actions { display: flex; gap: 8px; margin-top: 16px; justify-content: flex-end; }
+.auth-error { background: #fff2f0; color: #ff4d4f; padding: 10px 12px; border-radius: 8px; font-size: 14px; margin-bottom: 12px; }
